@@ -17,7 +17,8 @@ public class IdeaService {
 
 
     public List<Idea> findAllIdeas() {
-        return ideaRepository.findAllIdeas();
+        List<Idea> ideas = ideaRepository.findAll();
+        return ideas;
     }
 
     public void saveIdea(IdeaDto ideaDto) {

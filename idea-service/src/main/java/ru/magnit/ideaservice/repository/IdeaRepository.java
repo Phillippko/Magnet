@@ -6,5 +6,4 @@ import ru.magnit.ideaservice.domain.Idea;
 import java.util.List;
 
 public interface IdeaRepository extends JpaRepository<Idea, Long> {
-    List<Idea> findAllIdeas();
 }
